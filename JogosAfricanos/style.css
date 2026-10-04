@@ -52,7 +52,13 @@ a{
   padding-inline:clamp(20px, 5vw, 56px); 
 } 
 
-h1,h2,h3{ 
+h2{
+   font-family:var(--font-display); 
+  color:rgb(5, 99, 5); 
+  font-weight:700; 
+  letter-spacing:-0.01em; 
+}
+h1,h3{ 
   font-family:var(--font-display); 
   color:var(--ink); 
   font-weight:700; 
@@ -236,9 +242,15 @@ nav.main-nav a:hover::after{
   max-width:640px; 
   padding-block:80px 140px; 
 } 
+#titulo2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fffd80;
+}
 
 .eyebrow{ 
   display:inline-block; 
+  color:#ffffff;
   font-size:12.5px; 
   font-weight:700; 
   letter-spacing:0.14em; 
@@ -332,7 +344,7 @@ nav.main-nav a:hover::after{
   font-weight:700; 
   letter-spacing:0.16em; 
   text-transform:uppercase; 
-  color:pink; 
+  color:rgb(224, 7, 7); 
   margin-bottom:12px; 
 } 
 
@@ -760,8 +772,8 @@ footer .contato-item{
 
 .jogo-img-wrap{
     position: relative;
-    height: 200px;
-    background: #e2e4dc;
+    height: 450px; /* Aumentamos de 200px para 280px para dar mais espaço */
+    background: #f0f1ec; /* Um fundo suave caso a foto não preencha tudo */
     overflow: hidden;
 }
 
@@ -813,7 +825,7 @@ footer .contato-item{
     margin-top: 12px;
     font-size: 13.5px;
     font-weight: 700;
-    color: var(--roxo);
+    color:rgb(214, 6, 6);
     text-decoration: none;
     transition: color .2s ease;
 }
