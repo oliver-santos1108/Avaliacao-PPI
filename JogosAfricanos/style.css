@@ -77,7 +77,6 @@ h1,h3{
   } 
 } 
 
-/* ================= HEADER ================= */ 
 
 .topbar{ 
   height:4px; 
@@ -129,7 +128,7 @@ div.site-header{
   color:var(--verde);
 } 
 
-/* ================= NAV ================= */ 
+
 
 nav.main-nav{ 
   display:flex; 
@@ -160,7 +159,7 @@ nav.main-nav a:hover::after{
   right:0; 
 } 
 
-/* ================= BOTÕES ================= */ 
+
 
 .btn{ 
   display:inline-flex; 
@@ -206,7 +205,6 @@ nav.main-nav a:hover::after{
 } 
 
 
-/* ================= HERO ================= */ 
 
 .hero { 
   background: 
@@ -304,7 +302,7 @@ nav.main-nav a:hover::after{
 } 
 
 
-/* ================= SEAL ================= */ 
+
 
 .seal{ 
   position:absolute; 
@@ -322,7 +320,6 @@ nav.main-nav a:hover::after{
 } 
 
 
-/* ================= SECTION SHARED ================= */ 
 
 .section{ 
   padding-block:120px 96px; 
@@ -359,7 +356,6 @@ nav.main-nav a:hover::after{
 } 
 
 
-/* ================= SOBRE ================= */ 
 
 .sobre-text{ 
   max-width:760px; 
@@ -429,7 +425,6 @@ nav.main-nav a:hover::after{
 } 
 
 
-/* ================= OFICINAS ================= */ 
 
 .oficinas-grid{ 
   display:grid; 
@@ -494,7 +489,6 @@ nav.main-nav a:hover::after{
 } 
 
 
-/* ================= AGRADECIMENTOS ================= */ 
 
 .agradecimentos{ 
   background:var(--surface-tint); 
@@ -525,7 +519,6 @@ nav.main-nav a:hover::after{
 } 
 
 
-/* ================= EQUIPE ================= */ 
 
 .equipe-row{ 
   display:flex; 
@@ -581,7 +574,7 @@ nav.main-nav a:hover::after{
 } 
 
 
-/* ================= FOOTER ================= */ 
+
 
 footer.site-footer{ 
   background:#1b1f17; 
@@ -656,7 +649,7 @@ footer .contato-item{
 } 
 
 
-/* ================= RESPONSIVE ================= */ 
+
 
 @media (max-width: 900px){ 
 
@@ -664,12 +657,7 @@ footer .contato-item{
     flex-wrap:wrap; 
   } 
 
-  /*
-    O Bootstrap controla o display do .collapse.
-    Por isso NÃO usamos:
-      nav.main-nav { display:none; }
-      .is-open
-  */
+  
 
   .nav-toggle{
     display:flex;
@@ -747,7 +735,6 @@ footer .contato-item{
   } 
 }
 
-/* ================= JOGOS ADAPTADOS ================= */
 
 .jogos-grid{
     display: grid;
@@ -772,8 +759,8 @@ footer .contato-item{
 
 .jogo-img-wrap{
     position: relative;
-    height: 450px; /* Aumentamos de 200px para 280px para dar mais espaço */
-    background: #f0f1ec; /* Um fundo suave caso a foto não preencha tudo */
+    height: 450px; 
+    background: #f0f1ec; 
     overflow: hidden;
 }
 
@@ -818,7 +805,7 @@ footer .contato-item{
 .jogos-grid{ 
     grid-template-columns: 1fr; 
   }
-  /* ================= HISTÓRIA DOS JOGOS ================= */
+
 
 .jogo-content .btn-link{
     display: inline-block;
