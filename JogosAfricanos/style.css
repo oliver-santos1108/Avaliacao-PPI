@@ -332,7 +332,7 @@ nav.main-nav a:hover::after{
   font-weight:700; 
   letter-spacing:0.16em; 
   text-transform:uppercase; 
-  color:var(--roxo); 
+  color:pink; 
   margin-bottom:12px; 
 } 
 
@@ -733,4 +733,138 @@ footer .contato-item{
     gap:8px; 
     text-align:center; 
   } 
+}
+
+/* ================= JOGOS ADAPTADOS ================= */
+
+.jogos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.jogo-card{
+    background: var(--surface-alt);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.jogo-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px -10px rgba(0,0,0,0.12);
+}
+
+.jogo-img-wrap{
+    position: relative;
+    height: 200px;
+    background: #e2e4dc;
+    overflow: hidden;
+}
+
+.jogo-img-wrap img{
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+}
+
+.tag.origem{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(32,36,43,0.8);
+    color: #fff;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+}
+
+.jogo-content{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.jogo-content h3{
+    font-size: 20px;
+    color: var(--ink);
+}
+
+.jogo-content p{
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+}
+.jogos-grid{ 
+    grid-template-columns: 1fr; 
+  }
+  /* ================= HISTÓRIA DOS JOGOS ================= */
+
+.jogo-content .btn-link{
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--roxo);
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.jogo-content .btn-link:hover{
+    color: var(--verde-escuro);
+    text-decoration: underline;
+}
+
+.history-section{
+    background: var(--surface-alt);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.history-list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.history-item{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 36px;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+}
+
+.history-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.history-text .tag{
+    align-self: flex-start;
+    background: var(--surface-tint);
+    color: var(--roxo);
+    border: 1px solid rgba(123, 79, 201, 0.2);
+}
+
+.history-text h3{
+    font-size: 22px;
+    color: var(--ink);
+}
+
+.history-text p{
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.7;
 }
