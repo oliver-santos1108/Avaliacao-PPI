@@ -1,39 +1,34 @@
-let imagemAtual = 0;
-const slides = document.querySelectorAll('.banner-slide');     
-const totalSlides = slides.length;     
-const intervaloTempo = 3000; // Tempo de rotação automática (3 segundos)
+document.addEventListener("DOMContentLoaded", function () {
 
+    let imagemAtual = 0;
 
-let cronometro;
-function mostrarSlide(indice) {
-slides[imagemAtual].classList.remove('ativa');
-if (indice >= totalSlides)
-{imagemAtual = 0;
+    const slides = document.querySelectorAll(".banner-slide");
+    const botaoAnterior = document.querySelector(".seta.esquerda");
+    const botaoProximo = document.querySelector(".seta.direita");
 
-} else if (indice < 0) {
-    imagemAtual = totalSlides - 1;
-} else {  
-    imagemAtual = indice;
-}
+    function mostrarSlide(indice) {
 
-slides[imagemAtual].classList.add('ativa');
-}     function mudarSlide(direcao) {
-    mostrarSlide(imagemAtual + direcao);
-    resetarCronometro();
-} 
+        if (indice >= slides.length) {
+            imagemAtual = 0;
+        } else if (indice < 0) {
+            imagemAtual = slides.length - 1;
+        } else {
+            imagemAtual = indice;
+        }
 
-function iniciarCronometro() {
-    
-cronometro = setInterval(() => {
+        slides.forEach(function (slide) {
+            slide.classList.remove("ativa");
+        });
 
-mostrarSlide(imagemAtual + 1);}, intervaloTempo);
+        slides[imagemAtual].classList.add("ativa");
+    }
 
-}
+    botaoAnterior.addEventListener("click", function () {
+        mostrarSlide(imagemAtual - 1);
+    });
 
-function resetarCronometro() {
-clearInterval(cronometro);
+    botaoProximo.addEventListener("click", function () {
+        mostrarSlide(imagemAtual + 1);
+    });
 
-iniciarCronometro();
-} 
-
-iniciarCronometro(); 
+});

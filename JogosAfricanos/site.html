@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <div class="topbar"></div>
     <header>
         <div class="site-header">
@@ -29,21 +30,66 @@
             </div>
     </header>
     <section class="hero">
-        <div class="container hero-inner">
 
-            <img src=".\img\foto2.jpeg" class="imagem-ativa" id="img2">
-            <img src=".\img\foto5.jpeg" class="imagem-ativa" id="img5">
-            
-            <span class="eyebrow">Projeto de Pesquisa &middot; IFSC Câmpus Gaspar</span>
+        <div class="slider">
+
+            <img src="./img/foto2.jpeg" class="banner-slide ativa" alt="Projeto de jogos">
+            <img src="./img/foto5.jpeg" class="banner-slide" alt="Projeto de jogos">
+            <img src="./img/oficina1.jpg" class="banner-slide" alt="Oficina">
+            <img src="./img/oficina2.jpg" class="banner-slide" alt="Oficina">
+
+            <button class="seta esquerda" type="button">&#10094;</button>
+            <button class="seta direita" type="button">&#10095;</button>
+
+        </div>
+
+        <div class="container hero-inner">
+            <span class="eyebrow">Projeto de Pesquisa · IFSC Câmpus Gaspar</span>
+
             <h1>Envelhecer é continuar aprendendo, criando e se conectando.</h1>
-            <p id="titulo2">Através da adaptação de jogos de tabuleiro históricos, o projeto fomenta o envelhecimento
-                ativo,
-                a interação social e a valorização das culturas africana e indígena com a comunidade.</p>
+
+            <p id="titulo2">
+                Através da adaptação de jogos de tabuleiro históricos, o projeto fomenta
+                o envelhecimento ativo, a interação social e a valorização das culturas
+                africana e indígena com a comunidade.
+            </p>
+
             <div class="hero-actions">
                 <a href="#sobre" class="btn btn-white">Conheça o projeto</a>
                 <a href="#contato" class="btn btn-ghost-white">Fale conosco</a>
             </div>
         </div>
+
+    </section>
+
+    <div class="container hero-inner">
+
+        <span class="eyebrow">
+            Projeto de Pesquisa · IFSC Câmpus Gaspar
+        </span>
+
+        <h1>
+            Envelhecer é continuar aprendendo, criando e se conectando.
+        </h1>
+
+        <p id="titulo2">
+            Através da adaptação de jogos de tabuleiro históricos,
+            o projeto fomenta o envelhecimento ativo, a interação social
+            e a valorização das culturas africana e indígena com a comunidade.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#sobre" class="btn btn-white">
+                Conheça o projeto
+            </a>
+
+            <a href="#contato" class="btn btn-ghost-white">
+                Fale conosco
+            </a>
+        </div>
+
+    </div>
+
     </section>
     <section class="section" id="sobre">
         <div class="container">
@@ -280,6 +326,8 @@
             <span>Instituto Federal de Santa Catarina</span>
         </div>
     </footer>
+
+    <script src="site.js"></script>
 </body>
 
 </html>

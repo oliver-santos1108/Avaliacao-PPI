@@ -202,33 +202,105 @@ nav.main-nav a:hover::after{
   border-color:#653fab; 
 } 
 
-.hero { 
-  background: 
-    linear-gradient(
-      190deg,
-      rgba(20,22,18,0.35),
-      rgba(20,22,18,0.65)
-    ), 
-    url('/assets/v332_147.png') center / cover no-repeat; 
-  background-color:#b98f5e; 
-} 
+.hero {
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+    background: white;
+}
 
-.hero::before{ 
-  content:""; 
-  position:absolute; 
-  inset:0; 
-  background: 
-    radial-gradient(
-      circle at 15% 85%,
-      rgba(255,255,255,0.14),
-      transparent 40%
-    ), 
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(255,255,255,0.10),
-      transparent 45%
-    ); 
-} 
+.slider {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    z-index: 0;
+}
+
+.banner-slide.ativa {
+    opacity: 1;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(20, 22, 18, 0.70),
+        rgba(20, 22, 18, 0.35)
+    );
+
+    z-index: 1;
+}
+
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.75);
+    color: #20242b;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 3;
+    transition: 0.2s ease;
+}
+
+.seta:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.seta.esquerda {
+    left: 25px;
+}
+
+.seta.direita {
+    right: 25px;
+}
+
+.indicadores {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 9px;
+    z-index: 3;
+}
+
+.bolinha {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.bolinha.ativa {
+    width: 25px;
+    border-radius: 10px;
+    background: white;
+}
 
 .hero-inner{ 
   position:relative; 
