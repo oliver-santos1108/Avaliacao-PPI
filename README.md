@@ -9,7 +9,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Você tem uma máquina Windows / Linux / Mac.
 
-## 🚀 Instalando IFSC_60+
+## 🚀 Instalando Avaliacao-PPI
 
 Para instalar o projeto, siga estas etapas:
 
@@ -19,7 +19,7 @@ No terminal do Git Bash rode:
 git clone https://github.com/oliver-santos1108/Avaliacao-PPI.git
 ```
 
-## 📫 Contribuindo para IFSC_60+
+## 📫 Contribuindo para Avaliacao-PPI
 
 Para contribuir com o projeto, siga estas etapas:
 
