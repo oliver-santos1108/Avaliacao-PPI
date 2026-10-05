@@ -76,8 +76,6 @@ h1,h3{
     transition:none !important;
   } 
 } 
-
-
 .topbar{ 
   height:4px; 
   background:linear-gradient(
@@ -128,8 +126,6 @@ div.site-header{
   color:var(--verde);
 } 
 
-
-
 nav.main-nav{ 
   display:flex; 
   gap:34px; 
@@ -158,8 +154,6 @@ nav.main-nav a::after{
 nav.main-nav a:hover::after{ 
   right:0; 
 } 
-
-
 
 .btn{ 
   display:inline-flex; 
@@ -203,8 +197,6 @@ nav.main-nav a:hover::after{
   background:#653fab; 
   border-color:#653fab; 
 } 
-
-
 
 .hero { 
   background: 
@@ -301,9 +293,6 @@ nav.main-nav a:hover::after{
   border-color:#fff; 
 } 
 
-
-
-
 .seal{ 
   position:absolute; 
   right:clamp(20px, 8vw, 110px); 
@@ -318,8 +307,6 @@ nav.main-nav a:hover::after{
   height:100%; 
   filter:drop-shadow(0 14px 24px rgba(0,0,0,0.25)); 
 } 
-
-
 
 .section{ 
   padding-block:120px 96px; 
@@ -354,8 +341,6 @@ nav.main-nav a:hover::after{
   color:var(--muted); 
   font-size:15.5px; 
 } 
-
-
 
 .sobre-text{ 
   max-width:760px; 
@@ -424,8 +409,6 @@ nav.main-nav a:hover::after{
   background:linear-gradient(160deg,var(--laranja),#d9772e);
 } 
 
-
-
 .oficinas-grid{ 
   display:grid; 
   grid-template-columns:1fr 1fr; 
@@ -493,8 +476,6 @@ nav.main-nav a:hover::after{
   margin-top:2px; 
 } 
 
-
-
 .agradecimentos{ 
   background:var(--surface-tint); 
   padding-block:96px; 
@@ -522,8 +503,6 @@ nav.main-nav a:hover::after{
   font-weight:500; 
   line-height:1.6; 
 } 
-
-
 
 .equipe-row{ 
   display:flex; 
@@ -577,9 +556,6 @@ nav.main-nav a:hover::after{
   color:#9a9a9a; 
   margin-top:56px; 
 } 
-
-
-
 
 footer.site-footer{ 
   background:#1b1f17; 
@@ -662,8 +638,6 @@ footer .contato-item{
     flex-wrap:wrap; 
   } 
 
-  
-
   .nav-toggle{
     display:flex;
   }
@@ -671,10 +645,9 @@ footer .contato-item{
   #logoutBtn{
     order:3;
   }
-
   /*
     Quando o menu do Bootstrap estiver aberto,
-    ele ocupa a linha inteira.
+    ele ocupa a linha inteira
   */
   nav.main-nav.show{
     display:flex;
@@ -726,7 +699,6 @@ footer .contato-item{
   } 
 } 
 
-
 @media (max-width: 520px){ 
 
   .hero-actions{ 
@@ -739,7 +711,6 @@ footer .contato-item{
     text-align:center; 
   } 
 }
-
 
 .jogos-grid{
     display: grid;
